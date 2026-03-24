@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Playfair+Display&display=swap" rel="stylesheet">
+
+<script defer src="script.js"></script>
+</head>
+
+<body>
+
+<!-- 🔒 LOCK SCREEN -->
+<div id="lockScreen">
+    <h1>Enter Password ❤️</h1>
+    <input type="password" id="passwordInput" placeholder="Maybe one of your nickname">
+    <button onclick="checkPassword()">Unlock</button>
+</div>
+
+<!-- 🎵 MUSIC -->
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<!-- 🌌 LANDING -->
+<section class="fade">
+    <h1 id="typingText"></h1>
+    <button onclick="nextSection()">Click if you're smiling :)</button>
+</section>
+
+<!-- 💫 ABOUT -->
+<section class="fade">
+    <h1>You’re not just my best friend</h1>
+    <p>You’re my calm in chaos</p>
+</section>
+
+<!-- 🕰 MEMORIES -->
+<section class="fade">
+    <h1>Some memories...</h1>
+    <p>The making of "Oh Shwet Pawan Ki Deewani"</p>
+    <p>Vaise that dare is still pending</p>
+</section>
+
+<!-- 💭 FEELINGS -->
+<section class="fade">
+    <h1>I don’t say everything</h1>
+    <p>But you matter more than you think</p>
+</section>
+
+<!-- 🎂 FINAL -->
+<section class="fade">
+    <h1>Happy Birthday ❤️</h1>
+    <h1 class="glowName">Samiksha</h1>
+
+    <div class="cake">
+        🎂
+        <div id="candles">🕯️🕯️🕯️</div>
+    </div>
+
+    <p>Make a wish…</p>
+
+    <button onclick="blowCandles()">Blow Candles 🎈</button>
+
+    <h1 id="celebration" class="hidden">🎉 Happy Birthday 🎉</h1>
+
+    <p id="secretMsg" class="hidden">
+        I’m really glad I have you.
+    </p>
+
+    <button id="replayBtn" class="hidden" onclick="replay()">Replay</button>
+</section>
+
+</body>
+</html>
